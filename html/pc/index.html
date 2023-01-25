@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="플랙은 심플함의 미학과 일상적인 터치를 담은 국내 컨템포러리 브랜드입니다.">
+    <meta name="Author" content="PLAC">
+    <meta name="Keywords" content="플랙, 플렉, 청바지브랜드, 청바지추천, 김나영옷">
+    <meta property="og:title" content="플랙 공식 온라인 스토어">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plac-official.com">
+    <meta property="og:image" content="http://plac01.cafe24.com/web/upload/category/linkbanner.jpg">
+    <meta property="og:description" content="플랙은 심플함의 미학과 일상적인 터치를 담은 국내 컨템포러리 브랜드입니다.">
+    <link rel="canonical" href="https://plac-official.com"> 
+    <link rel="shortcut icon" type="image/x-icon" href="/web/upload/favicon-a8264c9b19c8ed521475e7397705fcb1.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/font.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/header.css"> 
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/layout.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/footer.css">
+    <title>플랙 공식 온라인 스토어 | PLAC</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../../static/js/jquery-3.6.1.min.js"></script>
+    <script src="../../modules/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+	<div id="skip">
+		<a rel="bookmark" href="#container">본문바로가기</a>
+	</div>
+	<div id="wrap">
+        <header>
+            <div class="h-inner">
+                <button type="button" class="hbg-btn"><span>네비게이션</span></button>
+                <h1 class="logo"><a href="index.html"><img src="../../static/img/icons/logo.svg" alt="로고"></a></h1>
+                <div class="h-icons">
+                    <a href="pc-mypage.html" class="login">로그인</a>
+                    <a href="pc-cart.html" class="cart">장바구니</a>
+                    <button type="button" class="search">검색</button>
+                </div>
+            </div>
+            <div class="search-box">
+                <div class="search-area"><input type="text"></div>
+                <div class="search-keyword">
+                    <strong>인기 검색어</strong>
+                    <a href="#"><span>패딩</span></a>
+                    <a href="#"><span>김나영 패딩</span></a>
+                    <a href="#"><span>바라클라바</span></a>
+                    <a href="#"><span>니트</span></a>
+                    <a href="#"><span>맨투맨</span></a>
+                </div>
+                <button type="button" class="close-btn">닫기</button>
+            </div> 
+            <nav>
+                <h2 class="hidden">플랙 네비게이션</h2>
+                <div class="nav-box">
+                    <ul class="product-nav">
+                        <li>
+                            <div class="shop-nav">
+                                 <ul>
+                                   <li><a href="#" class="holiday">The Holiday Shop</a></li>
+                                   <li><a href="#">BEST</a></li> 
+                                   <li>
+                                       <a href="#" class="product-list">WOMEN</a>
+                                        <ul class="sub-list">
+                                            <li><a href="#">all</a></li>
+                                            <li><a href="#">outer</a></li>
+                                            <li><a href="#">top</a></li>
+                                            <li><a href="#">bottom</a></li>
+                                            <li><a href="#">acc</a></li>
+                                        </ul>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="product-list">MEN</a>
+                                        <ul class="sub-list">
+                                            <li><a href="#">all</a></li>
+                                            <li><a href="#">outer</a></li>
+                                            <li><a href="#">top</a></li>
+                                            <li><a href="#">bottom</a></li>
+                                            <li><a href="#">acc</a></li>
+                                        </ul>
+                                   </li>
+                                   <li><a href="#">PLAC with Nayoung Kim</a></li>
+                                   <li><a href="#">PLAC 051</a></li>  
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">COLLABORATION</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                    </ul>
+                    <ul class="info-nav">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">매장안내</a></li>
+                    </ul>
+                    <ul class="member-nav">
+                        <li class="line"><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <script>
+            $(".hbg-btn").click(function() {
+                $("body").toggleClass("on");
+                $("header").toggleClass("on");
+                $(this).toggleClass("change");
+                $(".nav-box").toggleClass("on");
+            });
+
+            $(".product-list").click(function() {
+                $(this).siblings().slideToggle();
+                $(this).toggleClass("change");
+            });
+
+            $(window).scroll(function() {
+                let scrollT = $(window).scrollTop();
+                $("header").addClass("bg");
+                if(scrollT == 0) {
+                    $("header").removeClass("bg");
+                };
+
+                const sLeft = $(window).scrollLeft();
+                const wWidth = $(window).width();
+                console.log(sLeft);
+                $("header").css("left", -sLeft).css("width", wWidth + sLeft);
+            });
+           
+            $(".search").click(function() {
+                $(".search-box").toggleClass("show");
+                $(".hbg-btn").css("visibility", "hidden");
+            });
+
+            $(".close-btn").click(function() {
+                $(".search-box").toggleClass("show");
+                $(".hbg-btn").css("visibility", "visible");
+            });
+        </script>
+        <main id="contents">
+            <section class="main-sec">
+                <div class="main-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="visual-txt">
+                                <p class="event-name">The<br>Holiday Shop</p>
+                                <p class="event-date">12.16 ~ 12.31</p>
+                                <p class="event-des">플랙과 함께 하는 따뜻한 연말,<br>홀리데이 혜택으로 플랙의 다양한 상품을 만나보세요.</p>
+                            </div> 
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="visual-txt member-txt">
+                                <p class="event-name">PLAC Membership</p>
+                                <p class="event-des">지금 바로 PLAC의 회원이 되어<br>특별하고 다양한 혜택을 받아보세요.</p>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-pagination-box">
+                        <span class="current-num">01</span>
+                        <div class="swiper-pagination"></div>
+                        <span class="total-num">03</span>
+                    </div>
+                </div>
+            </section>
+            <script>
+                const mainSlider = new Swiper(".main-slider", {
+                    slidesPerView: 1,
+                    autoplay: true,
+                    speed: 500,
+                    pagination: {
+                        el: ".main-slider .swiper-pagination",
+                        type: "progressbar",
+                    },
+                    on: {
+                        slideChange: function() {
+                            var currentIdx = this.activeIndex + 1;
+                            // console.log(currentIdx)
+                            $(".main-slider .current-num").text("0" + currentIdx);
+                        },
+                    },
+                });
+            </script>
+            <section class="recom-sec blank">
+                <h3 class="sec-tit">PLAC이 제안하는 겨울 스타일링</h3>
+                <div class="recom-box">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/9e0650ef7e93cc6192a8722c7dc5f393.jpg" alt="겨울아우터">
+                                <p>보온과 멋을 동시에<br>겨울 아우터</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/4a648b77a5b7aa344688ec2c82d16b9b.jpg" alt="겨울상하의">
+                                <p>겨울에도 스타일리쉬하게<br>겨울 상/하의</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/475ed6fe7d61235e2e8c23c87bf4e02c.jpg" alt="겨울아이템">
+                                <p>따뜻하고 러블리한<br>겨울 아이템</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="best-sec blank">
+                <h3 class="sec-tit">BEST ITEM</h3>
+                <a href="#" class="more-btn">더보기</a>
+                <div class="best-slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/203e3cb7fa96cf96c867b252b0bfa4ea.jpg" alt="바라클라바">
+                                <p class="name">바라클라바</p>
+                                <p><span class="price">45,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/f64e7995a3ae75689ef9b70783b332b2.jpg" alt="더플 다운 점퍼">
+                                <p class="name">더플 다운 점퍼</p>
+                                <p><span class="price">279,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/cbe31e08be1de96d62b54ea2e47aad23.jpg" alt="스트라이프 라운드 니트">
+                                <p class="name">스트라이프 라운드 니트</p>
+                                <p><span class="price">109,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/77c8e3009dbf48bdd4ec2749835319e7.jpg" alt="뉴 라시다 051W 로우">
+                                <p class="name">뉴 라시다 051W 로우</p>
+                                <p><span class="price">129,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/4d974b911b73ca52db6107b6b5323405.jpg" alt="자켓 051B 블랙 로우">
+                                <p class="name">자켓 051B 블랙 로우</p>
+                                <p><span class="price">199,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/4616994c53da9c61013383a20569d27b.jpg" alt="케이블 크롭 니트">
+                                <p class="name">케이블 크롭 니트</p>
+                                <p><span class="price">99,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/b3333f9c32a42cabe465c38faad14330.jpg" alt="메종 K94 코듀로이">
+                                <p class="name">메종 K94 코듀로이</p>
+                                <p><span class="price">139,000</span>원</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="../../static/img/2b45e86f74710934c64c6fec732c3054.jpg" alt="니트 하프 집업">
+                                <p class="name">니트 하프 집업</p>
+                                <p><span class="price">109,000</span>원</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div> 
+                    <div class="swiper-button-next"></div> 
+                </div>
+            </section>
+            <script>
+                const bestSlider = new Swiper(".best-slide", {
+                    slidesPerView: 4,
+                    slidesPerGroup: 1,
+                    spaceBetween: 16,
+                    navigation: {
+                        prevEl: ".best-slide .swiper-button-prev",
+                        nextEl: ".best-slide .swiper-button-next",
+                    },
+                });
+            </script>
+            <section class="banner-sec">
+                <div class="banner-content blank">
+                    <div class="banner-video-box">
+                        <video poster="../../static/img/sdfw.jpg" class="banner-video" autoplay muted loop>
+                            <source src="../video/y2mate.com.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="banner-txt-box">
+                        <strong>051X</strong>
+                        <p>프리미엄 데님의 확장과<br>새로운 스타일에 대한 경험</p>
+                        <a href="#" class="now-btn">바로 가기</a>
+                    </div>
+                </div>
+            </section>
+            <section class="black-sec blank">
+                <h3 class="sec-tit">PLAC 051블랙 컬렉션</h3>
+                <a href="#" class="more-btn">더보기</a>
+                <div class="black-box">
+                    <div class="black-poster">
+                        <a href="#">
+                            <img src="../../static/img/85d0fa74b3f4e68f8d1646d8791af4fa.jpg" alt="블랙컬렉션포스터">
+                        </a>
+                    </div>
+                    <ul class="black-product">
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/6602bbfb749d6e2f5ac79a65bca292cf.jpg" alt="051블랙 상품">
+                            </a>
+                            <div class="black-txt">
+                                <p>자켓 051L 빈티지 블랙</p>
+                                <p><a href="#" class="now-btn">바로 가기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/b13becef7918d4e9f6e6fca6d7fe04d9.jpg" alt="051블랙 상품">
+                            </a>
+                            <div class="black-txt">
+                                <p>자켓 051B 블랙 로우</p>
+                                <p><a href="#" class="now-btn">바로 가기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/2fe0551a70f8a80dafd4c64f54bed01e.jpg" alt="051블랙 상품">
+                            </a>
+                            <div class="black-txt">
+                                <p>롱 스커트 051K 빈티지 블랙</p>
+                                <p><a href="#" class="now-btn">바로 가기</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../static/img/a46a31bce5729a0e94d07669daef9032.jpg" alt="051블랙 상품">
+                            </a>
+                            <div class="black-txt">
+                                <p>노이커츠 051B 블랙</p>
+                                <p><a href="#" class="now-btn">바로 가기</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collabo-sec blank">
+                <h3 class="sec-tit">PLAC Collaboration</h3>
+                <ul class="collabo-box">
+                    <li>
+                        <a href="#">
+                            <img src="../../static/img/2cf0f33e1c831ab2df49dac67876ea62.jpg" alt="언어팩티드">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../static/img/cd68cedea45f5285c6a881377a6abd84.jpg" alt="깡스타일리스트">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../static/img/30fccfc8c434fbcdfd64cdbc9f2e9a77.jpg" alt="oam.factory">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../static/img/8f746eda0c1ab8432a6bf8423a06614d.jpg" alt="런업">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-basic">
+                    <li>
+                        <a href="#">자주 묻는 질문</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <ul class="fot-sns">
+                    <li><a href="#">페이스북</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                    <li><a href="#">유튜브</a></li>
+                </ul>
+            </div>
+            <div class="fot-bot">
+                <div class="fot-info">
+                    <ul>
+                        <li>상호명: (주)플래시드웨이브코리아</li>
+                        <li>대표: 강승현</li>
+                        <li>사업자등록번호: 120-87-43304</li>
+                        <li>통신판매업: 2018-서울강남-02699</li>
+                    </ul>
+                    <p>주소: 서울특별시 강남구 압구정로36길 18 (신사동) 신구빌딩 6층 </p>
+                    <ul>
+                        <li>T: 02-539-1567 / F: 02-542-1569</li>
+                        <li>마케팅 및 협찬: <a href="mailto: areum_lee1@plac-official.com" class="mail">areum_lee1@plac-official.com</a></li>
+                    </ul>
+                </div>
+                <ul class="fot-center">
+                    <li><span class="call">전화기</span>고객센터 02-539-1567</li>
+                    <li>평일 10:00~17:00 (점심시간 12:00~13:00)</li>
+                </ul>
+            </div>
+            <p class="copyright">이곳의 모든 저작권은 plac에 있습니다.</p>
+        </footer>
+    </div>
+</body>
+</html>

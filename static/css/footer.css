@@ -1,0 +1,124 @@
+/*footer*/
+footer {
+	padding: 40px 0 105px;
+	background-color: #e5e5e5;
+	font-size: 10px;
+	text-align: center;
+}
+.footer-inner > ul,
+.footer-inner > div {
+	padding-bottom: 15px;
+}
+.fot-basic,
+.fot-info > ul,
+.fot-sns {
+	display: flex;
+	justify-content: center;
+}
+.fot-basic > li,
+.fot-info li,
+.fot-sns > li {
+	position: relative;
+	margin-right: 10px;
+}
+.fot-basic > li::after {
+	content: "";
+	position: absolute;
+	right: -5px;
+	width: 1px;
+	height: 10px;
+	background-color: #ededed;
+}
+.fot-basic > li:last-child::after {
+	display: none;
+}
+.fot-center > li:first-child {
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+}
+.fot-center .call {
+	position: absolute;
+	top: 0;
+	left: -15px;
+	width: 12px;
+	height: 12px;
+	background: url(../img/icons/49181.png) no-repeat center / 100%;
+	font-size: 0;
+}
+.fot-info li,
+.fot-info p {
+	line-height: 1.8;
+}
+.fot-sns > li > a {
+	width: 15px;
+	height: 15px;
+	background: url(../img/icons/3938032.png) no-repeat center / 100%;
+	font-size: 0;
+}
+.fot-sns > li:nth-child(2) > a {
+	background-image: url(../img/icons/717392.png);
+}
+.fot-sns > li:last-child > a {
+	background-image: url(../img/icons/254412.png);
+}
+
+/*quick-menu-box*/
+.quick-menu-box {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	font-size: 12px;
+	text-align: center;
+	z-index: 99;
+}
+.quick-menu-box > ul {
+	overflow: hidden;
+}
+.quick-menu-box li {
+	float: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4);
+    height: 80px;
+}
+.quick-menu-box li > a::before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 18px;
+	margin: 0 auto 6px;
+	background: url(../img/icons/home-off.png) no-repeat 0 0 / 100%;
+}
+.quick-menu-box li:nth-child(2) > a::before {
+	background-image: url(../img/icons/search-off.png);
+}
+.quick-menu-box li:nth-child(3) > a::before {
+	background-image: url(../img/icons/like-off.png);
+}
+.quick-menu-box li:last-child > a::before {
+	background-image: url(../img/icons/login-off.png);
+}
+.quick-menu-box li > a.on::before {
+	background-image: url(../img/icons/home-on.png);
+}
+.quick-menu-box li:nth-child(2) > a.on::before {
+	background-image: url(../img/icons/search-on.png);
+}
+.quick-menu-box li:nth-child(3) > a.on::before {
+	background-image: url(../img/icons/like-on.png);
+}
+.quick-menu-box li:last-child > a.on::before {
+	background-image: url(../img/icons/login-on.png);
+}
+.quick-menu-box li span {
+	color: #767676;
+}
+.quick-menu-box li > a.on > span {
+	color: #363636;
+	font-weight: 500;
+}

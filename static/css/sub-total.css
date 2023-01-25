@@ -1,0 +1,47 @@
+body, button, a, input {
+	font-family: "Pretendard", sans-serif;
+	color: #363636;
+	font-weight: 400;
+	line-height: 1.4;
+}
+main {
+	padding: 50px 0;
+}
+a {
+	display: inline-block;
+}
+img {
+	width: 100%;
+}
+.blank {
+	padding: 40px 20px;
+}
+.side-blank {
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.sec-tit {
+	margin-bottom: 24px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.check-box {
+	display: none;
+}
+.check-box-parent::before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
+	background: url(../img/icons/checked-bold.png) no-repeat top left / 100%;
+	vertical-align: middle;
+	font-size: 12px;
+	cursor: pointer;
+}
+.check-box-parent.on::before {
+	background-position: bottom left;
+}
+footer {
+	display: none;
+}

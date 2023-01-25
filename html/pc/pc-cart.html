@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="플랙은 심플함의 미학과 일상적인 터치를 담은 국내 컨템포러리 브랜드입니다.">
+    <meta name="Author" content="PLAC">
+    <meta name="Keywords" content="플랙, 플렉, 청바지브랜드, 청바지추천, 김나영옷">
+    <meta property="og:title" content="플랙 공식 온라인 스토어">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plac-official.com">
+    <meta property="og:image" content="http://plac01.cafe24.com/web/upload/category/linkbanner.jpg">
+    <meta property="og:description" content="플랙은 심플함의 미학과 일상적인 터치를 담은 국내 컨템포러리 브랜드입니다.">
+    <link rel="canonical" href="https://plac-official.com"> 
+    <link rel="shortcut icon" type="image/x-icon" href="/web/upload/favicon-a8264c9b19c8ed521475e7397705fcb1.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/font.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/header.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/pc-sub-total.css">  
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/pc-cart.css">
+    <link rel="stylesheet" type="text/css" href="../../static/css/pc/footer.css">
+    <title>플랙 공식 온라인 스토어 | PLAC</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../../static/js/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+	<div id="skip">
+		<a rel="bookmark" href="#container">본문바로가기</a>
+	</div>
+	<div id="wrap">
+         <header>
+            <div class="h-inner">
+                <button type="button" class="hbg-btn"><span>네비게이션</span></button>
+                <h1 class="logo"><a href="index.html"><img src="../../static/img/icons/logo.svg" alt="로고"></a></h1>
+                <div class="h-icons">
+                    <a href="pc-mypage.html" class="login">로그인</a>
+                    <a href="pc-cart.html" class="cart">장바구니</a>
+                    <button type="button" class="search">검색</button>
+                </div>
+            </div>
+            <div class="search-box">
+                <div class="search-area"><input type="text"></div>
+                <div class="search-keyword">
+                    <strong>인기 검색어</strong>
+                    <a href="#"><span>패딩</span></a>
+                    <a href="#"><span>김나영 패딩</span></a>
+                    <a href="#"><span>바라클라바</span></a>
+                    <a href="#"><span>니트</span></a>
+                    <a href="#"><span>맨투맨</span></a>
+                </div>
+                <button type="button" class="close-btn">닫기</button>
+            </div> 
+            <nav>
+                <h2 class="hidden">플랙 네비게이션</h2>
+                <div class="nav-box">
+                    <ul class="product-nav">
+                        <li>
+                            <div class="shop-nav">
+                                 <ul>
+                                   <li><a href="#" class="holiday">The Holiday Shop</a></li>
+                                   <li><a href="#">BEST</a></li> 
+                                   <li>
+                                       <a href="#" class="product-list">WOMEN</a>
+                                        <ul class="sub-list">
+                                            <li><a href="#">all</a></li>
+                                            <li><a href="#">outer</a></li>
+                                            <li><a href="#">top</a></li>
+                                            <li><a href="#">bottom</a></li>
+                                            <li><a href="#">acc</a></li>
+                                        </ul>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="product-list">MEN</a>
+                                        <ul class="sub-list">
+                                            <li><a href="#">all</a></li>
+                                            <li><a href="#">outer</a></li>
+                                            <li><a href="#">top</a></li>
+                                            <li><a href="#">bottom</a></li>
+                                            <li><a href="#">acc</a></li>
+                                        </ul>
+                                   </li>
+                                   <li><a href="#">PLAC with Nayoung Kim</a></li>
+                                   <li><a href="#">PLAC 051</a></li>  
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">COLLABORATION</a></li>
+                        <li><a href="#">LOOKBOOK</a></li>
+                    </ul>
+                    <ul class="info-nav">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">매장안내</a></li>
+                    </ul>
+                    <ul class="member-nav">
+                        <li class="line"><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <script>
+            $(".hbg-btn").click(function() {
+                $("body").toggleClass("on");
+                $("header").toggleClass("on");
+                $(this).toggleClass("change");
+                $(".nav-box").toggleClass("on");
+            });
+
+            $(".product-list").click(function() {
+                $(this).siblings().slideToggle();
+                $(this).toggleClass("change");
+            });
+
+            $(window).scroll(function() {
+                let scrollT = $(window).scrollTop();
+                $("header").addClass("bg");
+                if(scrollT == 0) {
+                    $("header").removeClass("bg");
+                };
+
+                const sLeft = $(window).scrollLeft();
+                const wWidth = $(window).width();
+                console.log(sLeft);
+                $("header").css("left", -sLeft).css("width", wWidth + sLeft);
+
+            });
+
+            $(".search").click(function() {
+                $(".search-box").toggleClass("show");
+                $(".hbg-btn").css("visibility", "hidden");
+            });
+
+            $(".close-btn").click(function() {
+                $(".search-box").toggleClass("show");
+                $(".hbg-btn").css("visibility", "visible");
+            });
+        </script>
+        <main id="container">
+            <section class="cart-sec">
+                <div class="cart-box-top arrange">
+                    <div class="amount-box check-box-parent">
+                        <input type="radio" class="check-box">
+                        <span>총 <em>0</em>개</span>
+                    </div>
+                    <div class="delete-box">
+                        <button type="button">선택삭제</button>
+                        <button type="button">전체삭제</button>
+                    </div>
+                </div>
+                <div class="cart-center">
+                    <p>장바구니에 담긴 상품이 없습니다.</p>
+                </div>
+                <div class="cart-bot">
+                    <div class="cart-price">
+                        <div class="product-price arrange">
+                            <span>총 상품금액</span>
+                            <span><em>0</em>원</span>
+                        </div>
+                        <div class="delivery-price arrange">
+                            <span>총 배송비</span>
+                            <span>+<em>0</em>원</span>
+                        </div>
+                    </div>
+                    <div class="cart-total-price arrange">
+                        <span>총 상품금액</span>
+                        <span><em>0</em>원</span>
+                    </div>
+                </div>
+                <div class="btn-box arrange">
+                    <button type="button">선택상품주문</button>
+                    <button type="button">전체상품주문</button>
+                </div>    
+            </section>
+            <script>
+                $(".check-box-parent").click(function() {
+                    $(this).toggleClass("on");
+                });
+            </script>
+        </main>
+        <footer>
+            <div class="fot-top">
+                <ul class="fot-basic">
+                    <li>
+                        <a href="#">자주 묻는 질문</a>
+                    </li>
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <ul class="fot-sns">
+                    <li><a href="#">페이스북</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                    <li><a href="#">유튜브</a></li>
+                </ul>
+            </div>
+            <div class="fot-bot">
+                <div class="fot-info">
+                    <ul>
+                        <li>상호명: (주)플래시드웨이브코리아</li>
+                        <li>대표: 강승현</li>
+                        <li>사업자등록번호: 120-87-43304</li>
+                        <li>통신판매업: 2018-서울강남-02699</li>
+                    </ul>
+                    <p>주소: 서울특별시 강남구 압구정로36길 18 (신사동) 신구빌딩 6층 </p>
+                    <ul>
+                        <li>T: 02-539-1567 / F: 02-542-1569</li>
+                        <li>마케팅 및 협찬: <a href="mailto: areum_lee1@plac-official.com" class="mail">areum_lee1@plac-official.com</a></li>
+                    </ul>
+                </div>
+                <ul class="fot-center">
+                    <li><span class="call">전화기</span>고객센터 02-539-1567</li>
+                    <li>평일 10:00~17:00 (점심시간 12:00~13:00)</li>
+                </ul>
+            </div>
+            <p class="copyright">이곳의 모든 저작권은 plac에 있습니다.</p>
+        </footer>
+    </div>
+</body>
+</html>
